@@ -1,0 +1,54 @@
+// Una variable es un elemento el cual tiene un nombre, ejemplo, 'a' y a esta se le puede asignar cualquier valor
+ejemplo var nombre = 'Ezequiel'
+var apellido = 'Regueira'
+Hay varios tipos de variables como: var, let o const, esta ultima, "const" seria constante como su nombre lo indica
+
+Un string es un bloque de texto, la manera mas sencilla de explicar seria, es la frase o palabra a la cual le atribuimos a la variable
+como en el ejemplo anterior, el string seria 'Ezequiel' o 'Regueira', estos strings siempre tendran que estar entre comillas ''
+
+Una funcion es la forma de hacer que un conjunto de variables se pueda calcular o cambiar
+Para construir una funcion se puede hacer de 3 formas:
+                                                        function miFuncion() {}
+                                                        vae otraFuncion = function () {};
+                                                        var yOtra => () = {};
+Una funcion basica seria esta
+                                function logHola(nombre) {
+                                    console.log('Hola, ' + nombre);
+                                }
+                                logHola('Ezequiel')
+Tambien se podrian agregar multiples argumentos colocando una coma entre ellos
+function sumarDosNumeros(a, b) {
+    var suma = a + b;
+    return suma;
+}
+sumarDosNumeros(1, 5); //6
+
+El return se podria explicar como la devolucion de una funcion que nos hace el sistema, le decimos al sistema que nos devuelva
+el producto de dividir dos numeros:
+
+function dividirDosNumeros(a, b)  {
+    var producto = a / b;
+    return producto;
+}
+
+dividirDosNumeros(6, 3); //2
+console.log(producto); //undefined
+
+Si usamos el console.log nos devolvera undefined debido a que no tenemos acceso a el fuera de la funcion
+A esto se le llama 'scope' o 'alcance', la unica forma de acceder a algo dentro de la funcion es devolverlo con 'return'
+
+El control de flujo lo que hace es verificarnos los datos que le damos a el sistema, como por ejemplo por metodo de comparacion
+En este caso le vamos a decir al sistema que si el usuario es < 18 no puede manejar, de caso contrario, si puede
+Con el if lo que hacemos es afirmar que si un valor es de tal manera, nos devuelva un valor boleano (true o false)
+Si la condicion no se cumple, pondremos un else debajo que lo que hara es que nos devuelva un false
+function puedeManejar(edad) {
+    if (edad > 18) {
+        return true;
+    } else {
+    return false;
+    }
+}
+
+puedeManejar(22); //true
+
+Al ser la edad de 22 años (> 18), se devuelve la opcion true, la cual verifica que puede manejar
